@@ -74,19 +74,14 @@ def multiples_and_addition(max_time, player, difficulty, mode, insults, cpu_spee
 
 
       except:
-         print('\ntype a number bro\n')
+         print('\ntype a number\n')
 
    return (player_score, total)
 
-def hot_potatoe(player, difficulty, mode):
-   pass
 
-'-------------------------------------------------------------------------------------------------'
+games = ['multiples', 'additions']
 
-
-games = ['multiples', 'additions', 'hot potatoe']
-
-insults = ['\n"stupid ass..."', '\n"retard"', '\n"you need help bruh"', '\n"yo mama shoulda swallowed you"', '\n"you make donald trump look smart"', '\n""', '\n"someone please help this dumbass nigga"', '\n"You as stupid as tunmise"']
+insults = ['\n"uh oh..."', '\n"incorrect"', '\n"its just simple maths"', '\n"Give up already?.."', '\n"Aint lookin too hot..."', '\n"lost..."', '\n"youre slacking"']
 
 #choosing you game -->
 print('{}---Welcome!---\n\nEnter game: [multiples], [additions]\n'.format('\n' * 30))
@@ -94,9 +89,9 @@ print('{}---Welcome!---\n\nEnter game: [multiples], [additions]\n'.format('\n' *
 choice = input()
 
 while choice not in games:
-   print('\n! Enter an actual game you fool\n')
+   print('\n! Enter a game in one of the brackets\n')
 
-   print('\nEnter game: [mutliples], [additions]\n')
+   print('\nEnter game: [multiples], [additions]\n')
 
    choice = input()
 
@@ -119,7 +114,7 @@ if choice == 'multiples' or choice == 'additions':
       try:
          max_time = float(input())
       except:
-         print('\nsmh I already know your gonna struggle in this game...\n')
+         print('\nA number please...\n')
          while max_time < 0:
             print('\ntry again...\n')
             try:
@@ -200,7 +195,7 @@ if choice == 'multiples' or choice == 'additions':
       try:
          max_time = float(input())
       except:
-         print('\nsmh I already know your gonna struggle in this game...\n')
+         print('\nA number please...\n')
          while max_time < 0:
             print('\ntry again...\n')
             try:

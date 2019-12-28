@@ -89,7 +89,7 @@ print('{}---Welcome!---\n\nEnter game: [multiples], [additions]\n'.format('\n' *
 choice = input()
 
 while choice not in games:
-   print('\n! Enter a game in one of the brackets\n')
+   print('\n! Enter a game in one of the games in the brackets\n')
 
    print('\nEnter game: [multiples], [additions]\n')
 
